@@ -11,7 +11,7 @@ const RatingCard = ({ item }) => {
             style={{
               marginBottom: 4,
               fontSize: 14,
-              fontWeight: "600",
+              fontFamily:'Jost-Medium',
               color: "#000000",
               lineHeight:20,
             }}
@@ -22,7 +22,7 @@ const RatingCard = ({ item }) => {
             <Text
               style={{
                 fontSize: 13,
-                fontWeight: "500",
+                fontFamily:'Jost-Medium',
                 lineHeight: 19,
                 color: "#FFCE31",
                 marginRight:4,
@@ -37,7 +37,7 @@ const RatingCard = ({ item }) => {
       <Text
         style={{
           fontSize: 13,
-          fontWeight: "400",
+          fontFamily:'Jost-Regular',
           lineHeight: 19,
           color: "#4F4F4F",
         }}

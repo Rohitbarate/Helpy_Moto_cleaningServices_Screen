@@ -1,12 +1,10 @@
 import { StyleSheet, Text, View ,TouchableOpacity, Image } from "react-native";
 import React,{useState} from "react";
 import Collapsible from "react-native-collapsible";
-import Accordion from 'react-native-collapsible/Accordion';
 
 const CollapsibleView = ({data}) => {
     const [isActive, setIsActive] = useState(false);
     const [collapsed, setCollapsed] = useState(true);
-    const [multipleSelect, setMultipleSelect] = useState(false);
   
     const toggleExpanded = () => {
         // Toggling the state of single Collapsible
@@ -19,7 +17,7 @@ const CollapsibleView = ({data}) => {
       {/*Code for Single Collapsible Start*/}
       <TouchableOpacity onPress={toggleExpanded}>
         <View style={styles.header}>
-          <Text style={[styles.headerText,{fontWeight:isActive?'600':'300'}]}>
+          <Text style={[styles.headerText,{fontFamily:isActive?'Jost-SemiBold':'Jost-Regular'}]}>
             {data.title}</Text>
         <Image 
         source={require('../../assets/img/down.png')}
@@ -50,7 +48,7 @@ const styles = StyleSheet.create({
     width:'100%'
   },
   header: {
-    width:'100%',
+    width:'95%',
     paddingVertical:8,
     display:'flex',
     flexDirection:'row',
@@ -67,7 +65,7 @@ const styles = StyleSheet.create({
   },
   contentText: {
     fontSize:13,
-    fontWeight:'400',
+    fontFamily:'Jost-Regular',
     lineHeight:19,
     color:'#464646'
   },

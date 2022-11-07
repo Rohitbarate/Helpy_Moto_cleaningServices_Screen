@@ -44,8 +44,8 @@ const ServiceDetails = ({ route, navigation }) => {
             />
             <Text
               style={{
-                fontSize: 14,
-                fontWeight: "500",
+                fontSize: 13,
+                fontFamily:'Jost-Medium',
                 lineHeight: 19,
                 color: "#5D5FEF",
                 marginLeft: 8,
@@ -58,7 +58,7 @@ const ServiceDetails = ({ route, navigation }) => {
             <Text
               style={{
                 fontSize: 14,
-                fontWeight: "600",
+               fontFamily:'Jost-SemiBold',
                 lineHeight: 20,
                 paddingHorizontal: 24,
                 paddingVertical: 4,
@@ -73,7 +73,6 @@ const ServiceDetails = ({ route, navigation }) => {
       <View style={[styles.serviceContainer,styles.VIEW]}>
         <Text
           style={[styles.HEADER,{
-            lineHeight: 22,
             marginBottom: 8,
           }]}
         >
@@ -95,14 +94,15 @@ const ServiceDetails = ({ route, navigation }) => {
           <Text
             style={{
               fontSize: 14,
-              fontWeight: "600",
+              fontFamily:'Jost-SemiBold',
               color: "#ffffff",
               marginBottom: 8,
+              lineHeight:20
             }}
           >
             Helpy Moto Assurance Program
           </Text>
-          <Text style={{ fontSize: 13, fontWeight: "400", color: "#ffffff" }}>
+          <Text style={{ fontSize: 13, fontFamily:'Jost-Regular', color: "#ffffff",lineHeight:19 }}>
             Free service in case of Unsatisfactory cleaning result
           </Text>
         </View>
@@ -111,7 +111,7 @@ const ServiceDetails = ({ route, navigation }) => {
         >
         <Image
           source={require("../../assets/img/arrow-left-circle.png")}
-          style={{ marginLeft: 16 }}
+          style={{ marginLeft: 8,height:30,aspectRatio:1 }}
         />
         </TouchableOpacity>
       </View>
@@ -141,8 +141,9 @@ export default ServiceDetails;
 
 const styles = StyleSheet.create({
   HEADER:{
-     fontSize: 18,
-     fontWeight: "600"
+     fontSize: 16,
+     fontFamily:'Jost-SemiBold',
+     lineHeight:23
   },
   VIEW:{
     width: 360,
@@ -166,7 +167,7 @@ const styles = StyleSheet.create({
   },
   desc: {
     fontSize: 14,
-    fontWeight: "400",
+    fontFamily:'Jost-Regular',
     lineHeight: 20,
     color: "#4F4F4F",
     marginBottom: 16,
@@ -190,17 +191,17 @@ const styles = StyleSheet.create({
   serText: {
     marginBottom: 8,
     fontSize: 14,
-    fontWeight: "400",
+    fontFamily:'Jost-Regular',
     lineHeight: 20,
     color: "#4F4F4F",
   },
   offerView: {
-    height: 63,
     width: "100%",
     paddingHorizontal: 16,
     flexDirection: "row",
     alignItems: "center",
     backgroundColor: "#5D5FEF",
+    paddingVertical:8
   },
   col: {
     paddingVertical: 8,

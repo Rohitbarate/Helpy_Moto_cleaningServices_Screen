@@ -19,7 +19,7 @@ const CleaningServices = ({ navigation }) => {
           source={require("../../assets/img/discount.png")}
           style={{ height: 34, aspectRatio: 1, borderRadius: 50 }}
         />
-        <Text style={{ color: "#fff", fontSize: 14, fontWeight: "600" }}>
+        <Text style={{ color: "#fff", fontSize: 14,fontFamily:'Jost-SemiBold', }}>
           {item}
         </Text>
       </View>
@@ -43,7 +43,7 @@ const CleaningServices = ({ navigation }) => {
             <Text
               style={{
                 fontSize: 14,
-                fontWeight: "600",
+                fontFamily:'Jost-SemiBold',
                 lineHeight: 20,
                 paddingHorizontal: 24,
                 paddingVertical: 4,
@@ -54,7 +54,7 @@ const CleaningServices = ({ navigation }) => {
             </Text>
           </TouchableOpacity>
           <View style={styles.serviceInfo}>
-            <Text style={{ fontSize: 16, fontWeight: "600", marginBottom: 8 }}>
+            <Text style={{ fontSize: 15, fontFamily:'Jost-Medium', marginBottom: 4,lineHeight:21 }}>
               {item.serviceName}
             </Text>
             <Text style={styles.text}>{`\u2022 Takes ${item.time} hours to `}</Text>
@@ -69,18 +69,19 @@ const CleaningServices = ({ navigation }) => {
                 flexDirection: "row",
                 alignItems: "center",
                 justifyContent: "flex-start",
-                marginTop: 12,
+                marginTop: 10,
               }}
             >
               <Text
                 style={{
                   marginRight: 8,
                   fontSize: 13,
-                  fontWeight: "500",
+                  fontFamily:'Jost-Medium',
                   textDecorationStyle: "dashed",
                   textDecorationLine: "line-through",
                   color: "#000000",
                   opacity: 0.4,
+                  lineHeight:19
                 }}
               >
                 &#8377;{item.price}.00
@@ -90,7 +91,8 @@ const CleaningServices = ({ navigation }) => {
                 style={{
                   fontSize: 15,
                   color: "#000",
-                  fontWeight: "700",
+                  fontFamily:'Jost-Bold',
+                  lineHeight:22
                 }}
               >
                 &#8377;{item.newPrice}.00
@@ -123,7 +125,7 @@ const CleaningServices = ({ navigation }) => {
         />
       </View>
       <View style={{ marginTop: 2, paddingVertical: 16, paddingLeft: 16 }}>
-        <Text style={{ fontSize: 16, fontWeight: "600", marginBottom: 16 }}>
+        <Text style={{ fontSize: 16, fontFamily:'Jost-SemiBold', marginBottom: 16,lineHeight:23 }}>
           Trending Services
         </Text>
         {/*  trending services view */}
@@ -155,7 +157,9 @@ const CleaningServices = ({ navigation }) => {
 };
 export default CleaningServices;
 const styles = StyleSheet.create({
-  container: {},
+  container: {
+    fontFamily:'Jost'
+  },
   offersCont: {
     height: 56,
     display: "flex",
@@ -187,10 +191,12 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "space-evenly",
     alignItems: "center",
+    borderBottomColor:'#ADADAD',
+    borderBottomWidth:1,
   },
   serviceImg: {
     width: "45%",
-    aspectRatio: 1,
+    height:150,
     borderRadius: 4,
     marginRight: 19,
   },
@@ -202,14 +208,15 @@ const styles = StyleSheet.create({
     marginBottom: 4,
     color: "#4F4F4F",
     fontSize: 13,
-    fontWeight: "500",
+    fontFamily:'Jost-Regular',
+    lineHeight:19
   },
   tredServName: {
     backgroundColor: "#ffffff4d",
     textAlign: "center",
     textAlignVertical: "center",
     fontSize: 13,
-    fontWeight: "600",
+    fontFamily:'Jost-SemiBold',
     lineHeight: 18,
     color: "#ffffff",
     position: "absolute",
@@ -224,7 +231,7 @@ const styles = StyleSheet.create({
     borderRadius: 4,
     position:'absolute',
     bottom:10,
-    left:60
+    left:50
   },
 });
 
