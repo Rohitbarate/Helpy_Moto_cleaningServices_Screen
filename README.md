@@ -6,7 +6,9 @@
 
 <img src="https://user-images.githubusercontent.com/90303131/200508777-397ce7ff-ea6a-4134-890d-a5ee99b96a13.jpg" width="200px" />
 
+# ppt file link
 
+https://drive.google.com/file/d/1zR5q0OOHkN1p-Wl44GwlY_ddX1f0yXkQ/view?usp=sharing
 
 
 
