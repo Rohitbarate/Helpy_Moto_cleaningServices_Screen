@@ -1,6 +1,7 @@
 {
   "expo": {
-    "name": "cleaningServices",
+    "owner": "mrperfect",
+    "name": "cleaning Services",
     "slug": "cleaningServices",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -24,10 +25,16 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.mrperfect.cleaningServices"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "776b90d6-4031-467d-bf57-65a9f521c8fb"
+      }
     }
   }
 }

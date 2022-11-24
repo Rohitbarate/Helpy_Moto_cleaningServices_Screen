@@ -4,11 +4,10 @@ import {
   View,
   ScrollView,
   Image,
-  Button,
   TouchableOpacity,
   FlatList,
 } from "react-native";
-import React,{useState} from "react";
+import React from "react";
 import DATA from '../api/services'
 import CollapsibleView from "./CollapsibleView";
 import RatingCard from "./RatingCard";

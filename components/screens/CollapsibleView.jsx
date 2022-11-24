@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View ,TouchableOpacity, Image } from "react-native";
 import React,{useState} from "react";
 import Collapsible from "react-native-collapsible";
-
+W4r
 const CollapsibleView = ({data}) => {
     const [isActive, setIsActive] = useState(false);
     const [collapsed, setCollapsed] = useState(true);
