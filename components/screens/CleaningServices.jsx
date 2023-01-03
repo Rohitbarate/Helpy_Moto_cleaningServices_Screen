@@ -5,12 +5,16 @@ import {
   TouchableOpacity,
   FlatList,
   Image,
+  Dimensions
 } from "react-native";
 import React from "react";
 // import ServiceView from "./ServiceView";
 import services from "../api/services";
 
 const CleaningServices = ({ navigation }) => {
+
+  const {width,height} = Dimensions.get('screen')
+
   // offers view start
   const OfferScreen = ({ item }) => {
     return (
